@@ -23,3 +23,18 @@
     tabcontentsitem3.style.display="none";
     tabcontentsitem4.style.display="none";
   });
+tabnavitem3.addEventListener("click",function(){
+    tabcontentsitem1.style.display="none";
+    tabcontentsitem2.style.display="none";
+    tabcontentsitem3.style.display="block";
+    tabcontentsitem4.style.display="none";
+  });
+
+  tabnavitem4.addEventListener("click",function(){
+    tabcontentsitem1.style.display="none";
+    tabcontentsitem2.style.display="none";
+    tabcontentsitem3.style.display="none";
+    tabcontentsitem4.style.display="block";
+  });
+
+})();
