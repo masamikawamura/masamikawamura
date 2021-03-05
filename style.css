@@ -22,7 +22,7 @@ body{
 }
 header{
     grid-area: header;
-    background-image:url(umi3.JPG);
+    background-image:url(image/umi3.JPG);
     background-repeat:no-repeat;
     background-size: 100vw;
     background-position: -10% ;
@@ -89,8 +89,9 @@ main{
 
 .tab-contents {
   border: 3px solid blue;
-  padding: auto;
+  padding: 5vw;
   background-color: white;
+
 }
 .tab-contents-item {
     display: none;
@@ -177,4 +178,3 @@ footer{
     "...  .....  ..."30px
     /10px  auto  10px
     }}
-    
