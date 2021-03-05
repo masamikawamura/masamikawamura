@@ -1,40 +1,43 @@
 (()=>{
-  let tabnavitem1= document.querySelector(".tabnavitem1")
-  let tabnavitem2= document.querySelector(".tabnavitem2")
-  let tabnavitem3= document.querySelector(".tabnavitem3")
-  let tabnavitem4= document.querySelector(".tabnavitem4")
-
-  let tabcontentsitem1= document.querySelector("#tabcontentsitem1")
-  let tabcontentsitem2= document.querySelector("#tabcontentsitem2")
-  let tabcontentsitem3= document.querySelector("#tabcontentsitem3")
-  let tabcontentsitem4= document.querySelector("#tabcontentsitem4")
-
-  tabnavitem1.addEventListener("click",function(){
-    tabcontentsitem1.style.display="block";
-    tabcontentsitem2.style.display="none";
-    tabcontentsitem3.style.display="none";
-    tabcontentsitem4.style.display="none";
-  });
+ 
+  const $doc = document;
+  const $tab = $doc.getElementById('js-tab');
+  const $nav = $tab.querySelectorAll('[data-nav]');
+  const $content = $tab.querySelectorAll('[data-content]');
+  const ACTIVE_CLASS = 'is-active';
+  const navLen = $nav.length;
   
+  //初期化
+  const init = () => {
+    $content[0].style.display = 'block';
+  };
+  init();
 
-  tabnavitem2.addEventListener("click",function(){
-    tabcontentsitem1.style.display="none";
-    tabcontentsitem2.style.display="block";
-    tabcontentsitem3.style.display="none";
-    tabcontentsitem4.style.display="none";
-  });
-tabnavitem3.addEventListener("click",function(){
-    tabcontentsitem1.style.display="none";
-    tabcontentsitem2.style.display="none";
-    tabcontentsitem3.style.display="block";
-    tabcontentsitem4.style.display="none";
-  });
+  //クリックしたら起こるイベント
+  const handleClick = (e) => {
+    e.preventDefault();
 
-  tabnavitem4.addEventListener("click",function(){
-    tabcontentsitem1.style.display="none";
-    tabcontentsitem2.style.display="none";
-    tabcontentsitem3.style.display="none";
-    tabcontentsitem4.style.display="block";
-  });
+    //クリックされたnavとそのdataを取得
+    const $this = e.target;
+    const targetVal = $this.dataset.nav;
 
-})();
+    //対象外のnav, content全て一旦リセットする
+    let index = 0;
+    while(index < navLen){
+      $content[index].style.display = 'none';
+      $nav[index].classList.remove(ACTIVE_CLASS);
+      index++;
+    }
+
+    //対象のコンテンツをアクティブ化する
+    $tab.querySelectorAll('[data-content="' + targetVal + '"]')[0].style.display = 'block';
+    $nav[targetVal].classList.add(ACTIVE_CLASS);
+  };
+
+  //全nav要素に対して関数を適応・発火
+  let index = 0;
+  while(index < navLen){
+    $nav[index].addEventListener('click', (e) => handleClick(e));  
+    index++;
+  }
+  })();
