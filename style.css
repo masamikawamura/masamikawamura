@@ -22,7 +22,7 @@ body{
 }
 header{
     grid-area: header;
-    background-image:url(image/umi3.JPG);
+    background-image:url(umi3.JPG);
     background-repeat:no-repeat;
     background-size: 100vw;
     background-position: -10% ;
