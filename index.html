@@ -23,15 +23,15 @@
     </nav> -->
     <main>
       <div class="tab" id="js-tab">
-        <div class="tabnav" >
-          <div class="tabnavitem1"> 最新記事</div>
-          <div class="tabnavitem2">過去記事</div>
-          <div class="tabnavitem3">つぶやき</div>
-          <div class="tabnavitem4">自己紹介</div>
-        </div>
-        <div class="tabcontents">
+        <div class="tab-nav" >
+          <a href="" class="tab-nav-item is-active" data-nav="0"> 最新記事</a>
+          <a href="" class="tab-nav-item" data-nav="1">過去記事</a>
+          <a href="" class="tab-nav-item" data-nav="2">つぶやき</a>
+          <a href="" class="tab-nav-item" data-nav="3">自己紹介</a>
+      </div>
+        <div class="tab-contents">
           <!-- 最新記事 -->
-          <div id="tabcontentsitem1" >
+          <div id="tab-contents-item" data-content="0">
             <h1 class="taitoru">
               タイトル
             </h1> 
@@ -53,7 +53,7 @@
             
           </div>
           <!-- 過去記事 -->
-          <div id="tabcontentsitem2" >
+          <div id="tabcontents-item" data-content="1" >
             <h1 class="taitoru">
               タイトル
             </h1> 
@@ -72,7 +72,7 @@
                  </div>
           </div>
           <!-- つぶやき -->
-          <div id="tabcontentsitem3">
+          <div id="tabcontents-item" data-content="2">
             <h1 class="taitoru">
               プログラミングはじめました。
             </h1> 
@@ -95,7 +95,7 @@
                  </div>
           </div>
           <!-- 自己紹介 -->
-          <div id="tabcontentsitem4" >
+          <div id="tabcontents-item" data-content="3">
              <div class="puro"> 
     　　
               <div class="nigaoe"><img src="nigaoe.jpeg" alt="MK"> </div>
@@ -128,7 +128,7 @@
         
       
   
-      <script type="text/javascript" src="https://github.com/mksaito/masamikawamura.github.io/blob/main/main.js"></script>
+      <script type="text/javascript" src="main.js"></script>
       
         <!---->
     </main>
