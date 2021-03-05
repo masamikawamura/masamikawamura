@@ -57,7 +57,7 @@ main{
   width: auto;
  
 }
-.tabnav {
+.tab-nav {
   display: flex;
   text-align: center;
 
@@ -66,7 +66,7 @@ main{
   
 
 
-.tabnavitem1, .tabnavitem2, .tabnavitem3,.tabnavitem4  {
+.tab-nav-item {
   margin-right: 2px;
   background:white;
   color:black;
@@ -80,28 +80,23 @@ main{
   cursor: pointer;
 
 }
+.tab-nav-item.is-active {
+    background:blue;
+    color: #fff;
+}
 
 
 
-
-.tabcontents {
+.tab-contents {
   border: 3px solid blue;
   padding: auto;
   background-color: white;
 }
+.tab-contents-item {
+    display: none;
+  }
 
-#tabcontentsitem1 {
-  display: block;
-} 
-#tabcontentsitem2 {
-    display: none;
-  } 
-#tabcontentsitem3 {
-    display: none;
-  } 
-#tabcontentsitem4 {
-    display: none;
-  } 
+
 
 aside{ 
     grid-area: aside;
@@ -182,3 +177,4 @@ footer{
     "...  .....  ..."30px
     /10px  auto  10px
     }}
+    
