@@ -11,11 +11,11 @@
 
   tabnavitem1.addEventListener("click",function(){
     tabcontentsitem1.style.display="block";
-    tabnavitem1.style.backgronudColor="blue";
     tabcontentsitem2.style.display="none";
     tabcontentsitem3.style.display="none";
     tabcontentsitem4.style.display="none";
   });
+  
 
   tabnavitem2.addEventListener("click",function(){
     tabcontentsitem1.style.display="none";
