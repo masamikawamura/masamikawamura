@@ -6,15 +6,13 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     min-height: auto;
-    /* text-align: center; */
+    
     display: grid;
     grid-template:
     "...  .....        .....   .....   .....      ..."10px
     "...  header       header  header  header     ..."30vw
     "...  .....        .....   .....   .....      ..."7px
-    /* "...  nav          nav     nav     nav        ..."5vw */
-    /* "...  .....        .....   .....   .....      ..."7px */
-    "...  main         main    .....   footer       ..."100px
+     "...  main         main    .....   footer       ..."100px
     "...  main         main   .....   .....      ..."7px
     "...  main         main  .....   aside     ..."auto
     "...  .....        .....   .....   .....      ..."30px
@@ -159,10 +157,11 @@ footer{
     display:inline-block;
     padding: 0.1em 4.5vw;
     text-decoration: none;
-    background:rgb(170, 170, 177);
+    background:rgb(235, 222, 36);
     color:white;
     border-bottom: solid 4px #627295;
     border-radius: 2px;
+    margin-bottom: 50px;
 }
 .toiawase:active{
     -webkit-transform: translateY(4px);
