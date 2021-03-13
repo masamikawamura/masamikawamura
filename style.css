@@ -172,6 +172,21 @@ footer{
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
+.gatya img{
+    width: 30vw;
+    max-width: 300px;
+    height: 30vr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 12vw;
+    
+}
+.kisuu{
+    background-color:powderblue;
+}
+.guusuu{
+    background-color:papayawhip;
+}
 @media(max-width:767px) {   
     body{
         grid-template: 
