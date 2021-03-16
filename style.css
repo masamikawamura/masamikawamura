@@ -166,6 +166,7 @@ footer{
     border-radius: 2px;
     margin-bottom: 50px;
 }
+
 .toiawase:active{
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
