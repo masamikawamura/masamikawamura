@@ -18,6 +18,14 @@ body{
     "...  .....        .....   .....   .....      ..."30px
     /10px 1fr          1fr      7px   300px      10px;
 }
+
+
+
+
+
+
+
+
 header{
     grid-area: header;
     background-image:url(umi3.JPG);
@@ -44,56 +52,11 @@ header h1{
 main{
     grid-area: main;
     word-break:break-all;
-    
-}
-.day{
-    text-align:right;
-    margin-right: 10px;
+    background-color: snow;
+    border: 3px solid blue;
+    padding: 5vw;
 }
 
-.tab {
-  width: auto;
- 
-}
-.tab-nav {
-  display: flex;
-  text-align: center;
-
-}
-
-  
-
-
-.tab-nav-item {
-  margin-right: 2px;
-  background:white;
-  color:black;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 6px 6px 0 0;
-  border:0 ;
-  font-size: 15px;
-  padding:1px 2px;
-  width: 100%;
-  cursor: pointer;
-
-}
-.tab-nav-item.is-active {
-    background:blue;
-    color: #fff;
-}
-
-
-
-.tab-contents {
-  border: 3px solid blue;
-  padding: 5vw;
-  background-color: white;
-
-}
-.tab-contents-item {
-    display: none;
-  }
 p{
     letter-spacing: 2px;
     color:black;
@@ -173,21 +136,7 @@ footer{
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
-.gatya img{
-    width: 30vw;
-    max-width: 300px;
-    height: 30vr;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 12vw;
-    
-}
-.kisuu{
-    background-color:powderblue;
-}
-.guusuu{
-    background-color:papayawhip;
-}
+
 .undertab {
     width: 15%;
     background: #c5e2238e;
@@ -200,17 +149,9 @@ footer{
   } 
   .kakokiziitiran {
     background-color: rgb(180, 218, 233);
-    font-size: 25px;
-    padding-left: 1fr;
-    padding-right: 1fr;
-    padding-top: 1fr;
-    padding-bottom:1fr ;
-    margin: 0;
-    width: auto;
-    height: 50px;
-    text-align: center;
-
+    margin-top: 30px;
  } 
+
  
  
 @media(max-width:767px) {   
