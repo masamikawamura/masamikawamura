@@ -189,7 +189,7 @@ footer{
     background-color:papayawhip;
 }
 .undertab {
-    width: 15%;
+    width: 40%;
     background: #c5e2238e;
     position: fixed;
     bottom:2px;
@@ -198,19 +198,17 @@ footer{
     text-align: center;
     z-index:999;
   } 
-  .kakokiziitiran {
+.kakokiziitiran {
     background-color: rgb(180, 218, 233);
-    font-size: 25px;
-    padding-left: 1fr;
-    padding-right: 1fr;
-    padding-top: 1fr;
-    padding-bottom:1fr ;
-    margin: 0;
+    text-align: left;
     width: auto;
     height: 50px;
-    text-align: center;
-
- } 
+} 
+.kakokiziitiranrink{
+    font-size: 25px;
+    
+    margin-top: 10px;
+}
  
  
 @media(max-width:767px) {   
