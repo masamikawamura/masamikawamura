@@ -11,7 +11,8 @@ body{
     grid-template:
     "...  .....        .....   .....   .....      ..."10px
     "...  header       header  header  header     ..."30vw
-    "...  .....        .....   .....   .....      ..."7px
+    "...  sns          sns     sns     sns     ..."auto
+    "...  .....        .....   .....   .....      ..."3px
      "...  main         main    .....   footer       ..."100px
     "...  main         main   .....   .....      ..."7px
     "...  main         main  .....   aside     ..."auto
@@ -209,14 +210,79 @@ footer{
     
     margin-top: 10px;
 }
- 
- 
+.sns{
+    grid-area:sns;
+    margin: 0;
+    padding: auto;
+    display:flex;
+}
+.snsbtniti2{
+    display:flex;
+    margin:5px auto 0 auto;
+    margin-right: 10px;
+}
+.snsbtniti2 li{
+    list-style: none; 
+    
+    margin-right: 10px;
+    
+    
+}
+.snsbtniti2 ul{
+    display: flex;
+    margin-top:0;
+
+}
+
+.flowbtn11{
+    font-family:'Verdana',sans-serif;	
+    border-radius:4px;
+    position:relative;
+    display:flex;
+  
+    width:auto;
+    font-size:20px;
+    color:#fff!important;
+    text-decoration:none;
+
+    padding-left: auto;
+    margin-bottom:5px;
+    margin-top:0;
+    }
+    
+    .fl_tw1{
+        background:#55acee;
+        }
+    .fl_fb1{
+            background:#3b5998;
+            }
+     .fl_li1{
+                background:#00c300;
+                }
+
+     .flowbtn11:hover span{
+                    -webkit-transform: rotateX(360deg);
+                    -ms-transform: rotateX(360deg);
+                    transform: rotateX(360deg);
+                    text-decoration:none;
+                    }
+     /* .snsbtniti2{
+                        display:flex;
+                        flex-flow:row wrap;
+                        }
+     .snsbtniti2 li{
+                            flex:0 0 48%;
+                            text-align:center!important;
+                            } */
+
+
 @media(max-width:767px) {   
     body{
         grid-template: 
     "...  ...    ..."10px
     "...  header ..."30vw
-    "...  .....  ..."7px
+    "...  sns    ..."auto
+    "...  .....  ..."2px
     "...  main   ..."auto
     "...  .....  ..."7px
     "...  footer  ..."100px
