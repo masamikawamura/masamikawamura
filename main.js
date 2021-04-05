@@ -40,19 +40,31 @@
     $nav[index].addEventListener('click', (e) => handleClick(e));  
     index++;
   }
-
-  // tabnavitem3.addEventListener("click","touchstart",function(){
-  //   tabcontentsitem1.style.display="none";
-  //   tabcontentsitem2.style.display="none";
-  //   tabcontentsitem3.style.display="block";
-  //   tabcontentsitem4.style.display="none";
-  // });
-
-  // tabnavitem4.addEventListener("click","touchstart",function(){
-  //   tabcontentsitem1.style.display="none";
-  //   tabcontentsitem2.style.display="none";
-  //   tabcontentsitem3.style.display="none";
-  //   tabcontentsitem4.style.display="block";
-  // });
+  
+  'use strict';
+  {
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', ()=>{
+    const n = Math.random();
+    //if文で確率を条件わけ
+    if(n < 0.005){ //５％
+      btn.textContent = 'ピックアップ武器'
+    }else if(n < 0.015){
+      btn.textContent = 'ピックアップ防具'
+    }else if(n < 0.0499){
+      btn.textContent = '星5'
+    }else if(n < 0.1){
+      btn.textContent = '星4'
+    }else if(n < 0.2){
+      btn.textContent = '星３'
+    }else if(n < 0.3){
+      btn.textContent = '星２'
+   
+    }else{
+      btn.textContent = '星１'
+    }
+    })
+  }
+ 
 
 })();
