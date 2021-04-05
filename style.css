@@ -277,10 +277,10 @@ footer{
                             flex:0 0 48%;
                             text-align:center!important;
                             } */
-                            body{
+                            /* body{
                                 background: #efefef;
                               }
-                              
+                               */
                               #btn{
                                 width: 250px;
                                 height: 150px;
@@ -306,8 +306,8 @@ footer{
                               }
                               
                               #btn:active{
-                                box-shadow: 0 5px 0 #d1483e;
-                                margin-top: 35px;
+                                box-shadow:none;
+                                margin-top: 30px;
                                 /* ボタンを押してる感を出す。下の影を小さくし、元の丸を同じ分だけ下げる */
                               
                               }
