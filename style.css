@@ -13,7 +13,7 @@ body{
     "...  header       header  header  header     ..."30vw
     "...  sns          sns     sns     sns     ..."auto
     "...  .....        .....   .....   .....      ..."3px
-     "...  main         main    .....   footer       ..."100px
+     "...  main         main    .....   footer       ..."110px
     "...  main         main   .....   .....      ..."7px
     "...  main         main  .....   aside     ..."auto
     "...  .....        .....   .....   .....      ..."30px
@@ -95,6 +95,12 @@ main{
 .tab-contents-item {
     display: none;
   }
+
+main h3{
+    margin-top: 50px;
+    text-decoration: underline solid red;
+
+} 
 p{
     letter-spacing: 2px;
     color:black;
@@ -156,6 +162,7 @@ footer{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+   
 }
 .toiawase{
     display:inline-block;
@@ -166,6 +173,7 @@ footer{
     border-bottom: solid 4px #627295;
     border-radius: 2px;
     margin-bottom: 50px;
+
 }
 
 .toiawase:active{
@@ -186,10 +194,12 @@ footer{
 .kisuu{
     background-color:powderblue;
     padding:30px 20px;
+    margin-bottom: 20px;
 }
 .guusuu{
     background-color:papayawhip;
     padding:30px 20px;
+    margin-bottom: 20px;
 }
 .undertab {
     width: 40%;
@@ -321,8 +331,8 @@ footer{
     "...  .....  ..."2px
     "...  main   ..."auto
     "...  .....  ..."7px
-    "...  footer  ..."100px
-    "...  .....  ..."7px
+    "...  footer  ..."110px
+    "...  .....  ..."10px
     "...  aside ..."auto
     "...  .....  ..."30px
     /5px  auto  5px

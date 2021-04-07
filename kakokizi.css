@@ -12,7 +12,7 @@ body{
     "...  .....        .....   .....   .....      ..."10px
     "...  header       header  header  header     ..."30vw
     "...  .....        .....   .....   .....      ..."7px
-     "...  main         main    .....   footer       ..."100px
+     "...  main         main    .....   footer       ..."110px
     "...  main         main   .....   .....      ..."7px
     "...  main         main  .....   aside     ..."auto
     "...  .....        .....   .....   .....      ..."30px
@@ -56,6 +56,22 @@ main{
     border: 3px solid blue;
     padding: 5vw;
 }
+.kisuu{
+    background-color:powderblue;
+    padding:30px 20px;
+    margin-bottom: 20px;
+}
+.guusuu{
+    background-color:papayawhip;
+    padding:30px 20px;
+    margin-bottom: 20px;
+}
+
+main h3{
+    margin-top: 50px;
+    text-decoration: underline solid red;
+
+} 
 
 p{
     letter-spacing: 2px;
@@ -150,6 +166,7 @@ footer{
   .kakokiziitiran {
     background-color: rgb(180, 218, 233);
     margin-top: 30px;
+    margin-bottom: 20px;
  } 
 
  
@@ -162,7 +179,7 @@ footer{
     "...  .....  ..."7px
     "...  main   ..."auto
     "...  .....  ..."7px
-    "...  footer  ..."100px
+    "...  footer  ..."110px
     "...  .....  ..."7px
     "...  aside ..."auto
     "...  .....  ..."30px
