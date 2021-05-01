@@ -54,7 +54,7 @@ main{
     word-break:break-all;
     background-color: snow;
     border: 3px solid blue;
-    padding: 5vw;
+    padding: 2vw;
 }
 .kisuu{
     background-color:powderblue;
@@ -78,6 +78,7 @@ p{
     color:black;
     margin-top: 10px;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
 
