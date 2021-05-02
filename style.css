@@ -11,6 +11,7 @@ body{
     grid-template:
     "...  .....        .....   .....   .....      ..."10px
     "...  header       header  header  header     ..."30vw
+    "...  .....        .....   .....   .....      ..."3px
     "...  sns          sns     sns     sns     ..."auto
     "...  .....        .....   .....   .....      ..."3px
      "...  main         main    .....   footer       ..."110px
@@ -74,8 +75,8 @@ main{
   text-decoration: none;
   border-radius: 6px 6px 0 0;
   border:0 ;
-  font-size: 15px;
-  padding:1px 2px;
+  font-size: 16px;
+  padding:1px 0px;
   width: 100%;
   cursor: pointer;
 
@@ -107,7 +108,7 @@ p{
     color:black;
     margin-top: 10px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size:17px;
 }
 
 
@@ -329,8 +330,9 @@ footer{
         grid-template: 
     "...  ...    ..."10px
     "...  header ..."30vw
+    "...  .....  ..."3px
     "...  sns    ..."auto
-    "...  .....  ..."2px
+    "...  .....  ..."3px
     "...  main   ..."auto
     "...  .....  ..."7px
     "...  footer  ..."110px
